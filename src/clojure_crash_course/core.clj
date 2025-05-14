@@ -1,5 +1,5 @@
 (ns clojure-crash-course.core)
 
-(defn foo
+(defn -main
   []
   (println "Hello!"))
