@@ -4,4 +4,5 @@
 (defn -main
   []
   (println "Hello!")
-  (println (utils/add 1 2)))
+  (def something (utils/add 1 2))
+  (println something))
