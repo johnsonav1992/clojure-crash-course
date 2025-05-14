@@ -2,4 +2,4 @@
 
 (defn foo
   []
-  (println "Hello, World!"))
+  (println "Hello!"))
