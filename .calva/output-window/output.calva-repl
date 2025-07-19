@@ -66,3 +66,87 @@ clj꞉clojure-crash-course.core꞉> 
 clj꞉clojure-crash-course.core꞉> 
 4
 clj꞉clojure-crash-course.core꞉> 
+; Syntax error compiling at (src/clojure_crash_course/core.clj:34:1).
+; Unable to resolve symbol: my-age in this context
+clj꞉clojure-crash-course.core꞉> 
+; Syntax error compiling at (src/clojure_crash_course/core.clj:33:1).
+; Unable to resolve symbol: my-name in this context
+clj꞉clojure-crash-course.core꞉> 
+(1 2 3 4)
+clj꞉clojure-crash-course.core꞉> 
+("apple" "banana" "cherry")
+clj꞉clojure-crash-course.core꞉> 
+[1 2 3 4]
+clj꞉clojure-crash-course.core꞉> 
+["apple" "banana" "cherry"]
+clj꞉clojure-crash-course.core꞉> 
+:name
+clj꞉clojure-crash-course.core꞉> 
+:age
+clj꞉clojure-crash-course.core꞉> 
+:favorite-color
+clj꞉clojure-crash-course.core꞉> 
+{:name "Alex", :age 25, :city "New York"}
+clj꞉clojure-crash-course.core꞉> 
+; Syntax error compiling at (src/clojure_crash_course/core.clj:0:0).
+; Unable to resolve symbol: my-name in this context
+clj꞉clojure-crash-course.core꞉> 
+15
+clj꞉clojure-crash-course.core꞉> 
+#'clojure-crash-course.core/result
+clj꞉clojure-crash-course.core꞉> 
+#'clojure-crash-course.core/my-name
+clj꞉clojure-crash-course.core꞉> 
+#'clojure-crash-course.core/my-age
+clj꞉clojure-crash-course.core꞉> 
+"Alex"
+clj꞉clojure-crash-course.core꞉> 
+"Hello Alex"
+clj꞉clojure-crash-course.core꞉> 
+30
+clj꞉clojure-crash-course.core꞉> 
+10
+clj꞉clojure-crash-course.core꞉> 
+30
+clj꞉clojure-crash-course.core꞉> 
+"Alex"
+clj꞉clojure-crash-course.core꞉> 
+25
+clj꞉clojure-crash-course.core꞉> 
+"Alex"
+clj꞉clojure-crash-course.core꞉> 
+#'clojure-crash-course.lesson2-functions/say-hello
+clj꞉clojure-crash-course.lesson2-functions꞉> 
+"Hello from my function!"
+clj꞉clojure-crash-course.lesson2-functions꞉> 
+#function[clojure-crash-course.lesson2-functions/say-hello]
+clj꞉clojure-crash-course.lesson2-functions꞉> 
+; Syntax error compiling at (src/clojure_crash_course/lesson2_functions.clj:20:1).
+; Unable to resolve symbol: greet in this context
+clj꞉clojure-crash-course.lesson2-functions꞉> 
+#'clojure-crash-course.lesson2-functions/greet
+clj꞉clojure-crash-course.lesson2-functions꞉> 
+"Hello Alex!"
+clj꞉clojure-crash-course.lesson2-functions꞉> 
+"Hello World!"
+clj꞉clojure-crash-course.lesson2-functions꞉> 
+"Hello Bob!"
+clj꞉clojure-crash-course.lesson2-functions꞉> 
+#'clojure-crash-course.lesson2-functions/add-three
+clj꞉clojure-crash-course.lesson2-functions꞉> 
+6
+clj꞉clojure-crash-course.lesson2-functions꞉> 
+60
+clj꞉clojure-crash-course.lesson2-functions꞉> 
+#'clojure-crash-course.lesson2-functions/greet-loudly
+clj꞉clojure-crash-course.lesson2-functions꞉> 
+"HELLO ALEX!!!"
+clj꞉clojure-crash-course.lesson2-functions꞉> 
+#function[clojure-crash-course.lesson2-functions/eval10328/fn--10329]
+clj꞉clojure-crash-course.lesson2-functions꞉> 
+10
+clj꞉clojure-crash-course.lesson2-functions꞉> 
+#function[clojure-crash-course.lesson2-functions/eval10338/fn--10339]
+clj꞉clojure-crash-course.lesson2-functions꞉> 
+10
+clj꞉clojure-crash-course.lesson2-functions꞉> 
