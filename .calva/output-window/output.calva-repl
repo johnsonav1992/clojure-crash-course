@@ -150,3 +150,43 @@ clj꞉clojure-crash-course.lesson2-functions꞉> 
 clj꞉clojure-crash-course.lesson2-functions꞉> 
 10
 clj꞉clojure-crash-course.lesson2-functions꞉> 
+#'clojure-crash-course.lesson3-collections/fruits
+clj꞉clojure-crash-course.lesson3-collections꞉> 
+#'clojure-crash-course.lesson3-collections/numbers
+clj꞉clojure-crash-course.lesson3-collections꞉> 
+#'clojure-crash-course.lesson3-collections/person
+clj꞉clojure-crash-course.lesson3-collections꞉> 
+(2 3 4 5 6)
+clj꞉clojure-crash-course.lesson3-collections꞉> 
+(2 4)
+clj꞉clojure-crash-course.lesson3-collections꞉> 
+("banana" "cherry")
+clj꞉clojure-crash-course.lesson3-collections꞉> 
+15
+clj꞉clojure-crash-course.lesson3-collections꞉> 
+(3 5)
+clj꞉clojure-crash-course.lesson3-collections꞉> 
+(:name :age :city)
+clj꞉clojure-crash-course.lesson3-collections꞉> 
+{:name "Alex", :age 25, :city "New York", :job "Programmer"}
+clj꞉clojure-crash-course.lesson3-collections꞉> 
+"apple"
+clj꞉clojure-crash-course.lesson3-collections꞉> 
+"date"
+clj꞉clojure-crash-course.lesson3-collections꞉> 
+#'clojure-crash-course.lesson3-collections/fruits
+clj꞉clojure-crash-course.lesson3-collections꞉> 
+4
+clj꞉clojure-crash-course.lesson3-collections꞉> 
+("banana" "cherry" "date")
+clj꞉clojure-crash-course.lesson3-collections꞉> 
+("apple" "banana")
+clj꞉clojure-crash-course.lesson3-collections꞉> 
+("cherry" "date")
+clj꞉clojure-crash-course.lesson3-collections꞉> 
+("Alex" 25 "New York")
+clj꞉clojure-crash-course.lesson3-collections꞉> 
+{:name "Alex", :city "New York"}
+clj꞉clojure-crash-course.lesson3-collections꞉> 
+(3 5)
+clj꞉clojure-crash-course.lesson3-collections꞉> 
