@@ -1,1 +1,1 @@
-["^ ","~$foo",["^ ","~:row",3,"~:col",1,"~:fixed-arities",["~#set",[0]],"~:name","^0","~:ns","~$clojure-crash-course.core","~:top-ns","^7","~:type","~:fn"],"~:filename","/Users/Alex/Desktop/clojure-crash-course/src/clojure_crash_course/core.clj"]
+["^ ","~$-main",["^ ","~:row",26,"~:col",1,"~:fixed-arities",["~#set",[0]],"~:name","^0","~:ns","~$clojure-crash-course.core","~:top-ns","^7","~:type","~:fn"],"~$something",["^ ","^1",29,"^2",3,"^5","^;","^6","^7","^8","^7"],"~:filename","/Users/Alex/Desktop/clojure-crash-course/src/clojure_crash_course/core.clj"]

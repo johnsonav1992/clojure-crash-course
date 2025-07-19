@@ -1,0 +1,1 @@
+["^ ","~$add",["^ ","~:row",3,"~:col",1,"~:fixed-arities",["~#set",[2]],"~:name","^0","~:ns","~$clojure-crash-course.utils","~:top-ns","^7","~:arities",["^ ","~i2",["^ ","~:ret","~:number","~:arglist-str","[a b]"]],"~:type","~:fn"],"~:filename","/Users/Alex/Desktop/clojure-crash-course/src/clojure_crash_course/utils.clj"]

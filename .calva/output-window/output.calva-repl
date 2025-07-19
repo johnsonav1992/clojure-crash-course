@@ -37,36 +37,32 @@ You can configure this with the setting:
 ; 
 
 ; Starting Jack-in: (cd /Users/Alex/Desktop/clojure-crash-course; lein update-in :dependencies conj '[nrepl,"1.3.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.55.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless)
-; Using host:port 127.0.0.1:55081 ...
+; Using host:port 127.0.0.1:58828 ...
 ; Hooking up nREPL sessions ...
 ; Connected session: clj
 ; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
 nil
-nil
 clj꞉clojure-crash-course.core꞉> 
-( 1 1 )
-; Execution error (ClassCastException) at clojure-crash-course.core/eval10255 (REPL:47).
-; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+"Please see https://calva.io/output/#about-stdout-in-the-repl-window
+about why stdout printed to this file is prepended with `;` to be line comments."
 clj꞉clojure-crash-course.core꞉> 
-(println "Hello, world!")
-; Hello, world!
-nil
+; Jack-in done.
 clj꞉clojure-crash-course.core꞉> 
-; (defn add [a b]
-;   (+ a b))
-; => #'clojure-crash-course.core/add
-; clj꞉clojure-crash-course.core꞉>
-; (add 1 2)
-; => 3
-clojure-crash-course.core/-main
-; Syntax error compiling at (.calva/output-window/output.calva-repl:0:0).
-; No such var: clojure-crash-course.core/-main
+#'clojure-crash-course.core/something
 clj꞉clojure-crash-course.core꞉> 
-(println (utils/add 1 2))
-; Syntax error compiling at (.calva/output-window/output.calva-repl:65:10).
-; No such namespace: utils
+#'clojure-crash-course.core/something
 clj꞉clojure-crash-course.core꞉> 
-(println (clojure-crash-course.utils/add 1 2))
-; Syntax error (ClassNotFoundException) compiling at (.calva/output-window/output.calva-repl:69:10).
-; clojure-crash-course.utils
+2
+clj꞉clojure-crash-course.core꞉> 
+3
+clj꞉clojure-crash-course.core꞉> 
+3
+clj꞉clojure-crash-course.core꞉> 
+10
+clj꞉clojure-crash-course.core꞉> 
+7
+clj꞉clojure-crash-course.core꞉> 
+20
+clj꞉clojure-crash-course.core꞉> 
+4
 clj꞉clojure-crash-course.core꞉> 
