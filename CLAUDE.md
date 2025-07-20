@@ -1,14 +1,15 @@
 # Clojure Learning Journey with Claude
 
 ## Current Progress
-- **Current Lesson**: Ready for Lesson 4 - Control Flow
-- **Completed Lessons**: 1, 2, 3
+- **Current Lesson**: Ready for Lesson 4 - Control Flow  
+- **Completed Lessons**: 1, 2, 3 + Practice Review
 - **Student Level**: Beginner (some coding experience)
 
 ## Completed Lessons
 ✅ **Lesson 1**: Basic syntax, data types, variables, collections  
 ✅ **Lesson 2**: Functions (defn, parameters, anonymous functions)  
 ✅ **Lesson 3**: Collection operations (map, filter, reduce, assoc, etc.)  
+✅ **Practice Review**: Completed practice problems (8/12 perfect, 3 need work)
 🔄 **Lesson 4**: Control flow and conditionals (file created, ready to start)
 
 ## Learning Plan
