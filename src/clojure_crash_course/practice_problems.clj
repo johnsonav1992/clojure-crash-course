@@ -23,7 +23,12 @@
 (def favorite-food "Thai")
 (def likes-programming true)
 (:clojure "Clojure")
-nil 
+nil
+
+;; FEEDBACK: Almost perfect! Two small issues:
+;; ✅ age, favorite-food, likes-programming - perfect!
+;; ❌ (:clojure "Clojure") - this calls :clojure as a function. You want: (def learning-keyword :clojure)
+;; ❌ nil - this just evaluates nil. You want: (def nothing nil) 
 
 ;; Problem 2: Work with collections
 ;; TODO: Create the following collections:
@@ -36,6 +41,8 @@ nil
 (def nums '(1 2 3 4 5))
 (def person {:name "Alex" :age 33 :city "Fort Worth"})
 
+;; FEEDBACK: Perfect! ✅ All three collections are exactly right!
+
 
 ;; Problem 3: Access collection elements
 ;; TODO: Using the collections from Problem 2:
@@ -47,6 +54,9 @@ nil
 (first colors)
 (last nums)
 (get person :name)
+
+;; FEEDBACK: Perfect! ✅ All three access methods are correct!
+;; Note: You could also use (:name person) or (person :name) for map access
 
 
 ;; =============================================================================
@@ -64,6 +74,8 @@ nil
 
 (greet "Alex")
 
+;; FEEDBACK: Perfect! ✅ Function definition and call are exactly right!
+
 
 ;; Problem 5: Function with multiple parameters
 ;; TODO: Write a function called `add-three` that takes three numbers
@@ -76,6 +88,8 @@ nil
 
 (add-three 1 2 3)
 
+;; FEEDBACK: Perfect! ✅ Great function with multiple parameters!
+
 
 ;; Problem 6: Anonymous function
 ;; TODO: Create an anonymous function that doubles a number
@@ -84,6 +98,8 @@ nil
 ;; Your solution here:
 #(* 2 %)
 (#(* 2 %) 7)
+
+;; FEEDBACK: Perfect! ✅ Anonymous function syntax is exactly right!
 
 
 ;; =============================================================================
@@ -98,6 +114,8 @@ nil
 (def nums [1 2 3 4 5])
 (map #(* 10 %) nums)
 
+;; FEEDBACK: Perfect! ✅ Map with anonymous function is exactly right!
+
 
 ;; Problem 8: Filter data
 ;; TODO: Given this vector of numbers: [1 2 3 4 5 6 7 8 9 10]
@@ -106,6 +124,8 @@ nil
 ;; Your solution here:
 (def filter-nums [1 2 3 4 5 6 7 8 9 10])
 (filter even? filter-nums)
+
+;; FEEDBACK: Perfect! ✅ Filter with even? predicate is exactly right!
 
 
 ;; Problem 9: Reduce data
@@ -116,6 +136,8 @@ nil
 (def nums3 [10 20 30 40 50])
 (reduce + nums3)
 
+;; FEEDBACK: Perfect! ✅ Reduce with + function is exactly right!
+
 ;; Problem 10: Work with maps
 ;; TODO: Given this map: {:name "Alice" :age 25 :city "Portland"}
 ;; - Add a new key :occupation with value "Developer"
@@ -123,6 +145,18 @@ nil
 ;; - Remove the :city key
 
 ;; Your solution here:
+(def person {:name "Alice" :age 25 :city "Portland"})
+(assoc person :occupation "Developer")
+(assoc person :age 26)
+(dissoc person :city)
+
+;; FEEDBACK: Good start! ✅ You understand assoc and dissoc correctly!
+;; ⚠️  However, these operations create separate new maps. To chain them:
+;; (-> person 
+;;     (assoc :occupation "Developer")
+;;     (assoc :age 26)
+;;     (dissoc :city))
+;; Or: (dissoc (assoc person :occupation "Developer" :age 26) :city)
 
 
 ;; =============================================================================
@@ -135,6 +169,13 @@ nil
 ;; Hint: You'll need filter, reduce, and maybe an anonymous function
 
 ;; Your solution here:
+(def nums [1 2 3])
+(filter even? nums 
+        reduce + )
+
+;; FEEDBACK: Good thinking! ❌ But syntax is wrong - you can't mix functions like that.
+;; ✅ Correct solution: (defn sum-evens [numbers] (reduce + (filter even? numbers)))
+;; Then call: (sum-evens [1 2 3 4 5 6]) => 12
 
 
 ;; Challenge 2: Working with maps in collections
@@ -143,6 +184,14 @@ nil
 ;; Create a new vector containing only the names of people over 21
 
 ;; Your solution here:
+(def people [{:name "Alice" :age 25} {:name "Bob" :age 30} {:name "Charlie" :age 20}])
+(filter #(> 21 % :age) people)
+
+;; FEEDBACK: Good attempt! ❌ The filter syntax is wrong.
+;; ✅ Correct solutions:
+;; Step 1 - Filter people over 21: (filter #(> (:age %) 21) people)
+;; Step 2 - Get just names: (map :name (filter #(> (:age %) 21) people))
+;; Combined: (->> people (filter #(> (:age %) 21)) (map :name))
 
 
 ;; =============================================================================

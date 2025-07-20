@@ -330,3 +330,22 @@ clj꞉clojure-crash-course.practice-problems꞉> 
 clj꞉clojure-crash-course.practice-problems꞉> 
 150
 clj꞉clojure-crash-course.practice-problems꞉> 
+#'clojure-crash-course.practice-problems/person
+clj꞉clojure-crash-course.practice-problems꞉> 
+{:name "Alice", :age 25, :city "Portland", :occupation "Developer"}
+clj꞉clojure-crash-course.practice-problems꞉> 
+{:name "Alice", :age 26, :city "Portland"}
+clj꞉clojure-crash-course.practice-problems꞉> 
+{:name "Alice", :age 25}
+clj꞉clojure-crash-course.practice-problems꞉> 
+; Execution error (ArityException) at clojure-crash-course.practice-problems/eval10462 (REPL:143).
+; Wrong number of args (4) passed to: clojure.core/filter
+clj꞉clojure-crash-course.practice-problems꞉> 
+; Syntax error compiling at (src/clojure_crash_course/practice_problems.clj:154:1).
+; Unable to resolve symbol: people in this context
+clj꞉clojure-crash-course.practice-problems꞉> 
+#'clojure-crash-course.practice-problems/people
+clj꞉clojure-crash-course.practice-problems꞉> 
+; Error printing return value (ClassCastException) at clojure.lang.Numbers/gt (Numbers.java:261).
+; class clojure.lang.PersistentArrayMap cannot be cast to class java.lang.Number (clojure.lang.PersistentArrayMap is in unnamed module of loader 'app'; java.lang.Number is in module java.base of loader 'bootstrap')
+clj꞉clojure-crash-course.practice-problems꞉> 
