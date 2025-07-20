@@ -35,7 +35,7 @@
   [name]
   (str "HELLO " (clojure.string/upper-case name) "!!!"))
 
-(greet-loudly "alex")
+(greet-loudly "Alex")
 
 ;; Anonymous functions (functions without names)
 (fn [x] (* x 2))

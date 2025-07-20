@@ -190,3 +190,143 @@ clj꞉clojure-crash-course.lesson3-collections꞉> 
 clj꞉clojure-crash-course.lesson3-collections꞉> 
 (3 5)
 clj꞉clojure-crash-course.lesson3-collections꞉> 
+; nREPL Connection was closed
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in: (cd /Users/Alex/Desktop/clojure-crash-course; lein update-in :dependencies conj '[nrepl,"1.3.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.55.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless)
+; Using host:port 127.0.0.1:65061 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉clojure-crash-course.core꞉> 
+; Jack-in done.
+clj꞉clojure-crash-course.core꞉> 
+#'clojure-crash-course.lesson2-functions/greet-loudly
+clj꞉clojure-crash-course.lesson2-functions꞉> 
+"HELLO BOB!!!"
+clj꞉clojure-crash-course.lesson2-functions꞉> 
+"HELLO ALEX!!!"
+clj꞉clojure-crash-course.lesson2-functions꞉> 
+#'clojure-crash-course.utils/add
+clj꞉clojure-crash-course.utils꞉> 
+63
+clj꞉clojure-crash-course.utils꞉> 
+63
+clj꞉clojure-crash-course.utils꞉> 
+; Execution error (ArityException) at clojure-crash-course.utils/eval10296 (REPL:6).
+; Wrong number of args (1) passed to: clojure-crash-course.utils/add
+clj꞉clojure-crash-course.utils꞉> 
+63
+clj꞉clojure-crash-course.utils꞉> 
+; Syntax error macroexpanding clojure.core/defn at (src/clojure_crash_course/practice_problems.clj:22:1).
+; 5 - failed: vector? at: [:fn-tail :arity-1 :params] spec: :clojure.core.specs.alpha/param-list
+; 5 - failed: (or (nil? %) (sequential? %)) at: [:fn-tail :arity-n :bodies] spec: :clojure.core.specs.alpha/params+body
+clj꞉clojure-crash-course.practice-problems꞉> 
+; Syntax error macroexpanding clojure.core/defn at (src/clojure_crash_course/practice_problems.clj:22:1).
+; 33 - failed: vector? at: [:fn-tail :arity-1 :params] spec: :clojure.core.specs.alpha/param-list
+; 33 - failed: (or (nil? %) (sequential? %)) at: [:fn-tail :arity-n :bodies] spec: :clojure.core.specs.alpha/params+body
+clj꞉clojure-crash-course.practice-problems꞉> 
+; Syntax error macroexpanding clojure.core/defn at (src/clojure_crash_course/practice_problems.clj:22:1).
+; 33 - failed: vector? at: [:fn-tail :arity-1 :params] spec: :clojure.core.specs.alpha/param-list
+; 33 - failed: (or (nil? %) (sequential? %)) at: [:fn-tail :arity-n :bodies] spec: :clojure.core.specs.alpha/params+body
+clj꞉clojure-crash-course.practice-problems꞉> 
+nil
+clj꞉clojure-crash-course.practice-problems꞉> 
+; Syntax error macroexpanding clojure.core/defn at (src/clojure_crash_course/practice_problems.clj:22:1).
+; 33 - failed: vector? at: [:fn-tail :arity-1 :params] spec: :clojure.core.specs.alpha/param-list
+; 33 - failed: (or (nil? %) (sequential? %)) at: [:fn-tail :arity-n :bodies] spec: :clojure.core.specs.alpha/params+body
+clj꞉clojure-crash-course.practice-problems꞉> 
+#'clojure-crash-course.practice-problems/age
+clj꞉clojure-crash-course.practice-problems꞉> 
+#'clojure-crash-course.practice-problems/favorite-food
+clj꞉clojure-crash-course.practice-problems꞉> 
+#'clojure-crash-course.practice-problems/likes-programming
+clj꞉clojure-crash-course.practice-problems꞉> 
+; Execution error (ClassCastException) at clojure-crash-course.practice-problems/eval10379 (REPL:25).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉clojure-crash-course.practice-problems꞉> 
+; 33
+nil
+clj꞉clojure-crash-course.practice-problems꞉> 
+nil
+clj꞉clojure-crash-course.practice-problems꞉> 
+nil
+clj꞉clojure-crash-course.practice-problems꞉> 
+; Execution error (ClassCastException) at clojure-crash-course.practice-problems/eval10385 (REPL:35).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉clojure-crash-course.practice-problems꞉> 
+; Execution error (ClassCastException) at clojure-crash-course.practice-problems/eval10387 (REPL:35).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉clojure-crash-course.practice-problems꞉> 
+#'clojure-crash-course.practice-problems/colors
+clj꞉clojure-crash-course.practice-problems꞉> 
+#'clojure-crash-course.practice-problems/nums
+clj꞉clojure-crash-course.practice-problems꞉> 
+; Execution error (ClassCastException) at nrepl.middleware.interruptible-eval/evaluator$run$fn (interruptible_eval.clj:106).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉clojure-crash-course.practice-problems꞉> 
+#'clojure-crash-course.practice-problems/nums
+clj꞉clojure-crash-course.practice-problems꞉> 
+; Syntax error compiling at (src/clojure_crash_course/practice_problems.clj:37:1).
+; Unable to resolve symbol: dep in this context
+clj꞉clojure-crash-course.practice-problems꞉> 
+#'clojure-crash-course.practice-problems/person
+clj꞉clojure-crash-course.practice-problems꞉> 
+"red"
+clj꞉clojure-crash-course.practice-problems꞉> 
+5
+clj꞉clojure-crash-course.practice-problems꞉> 
+; Error printing return value (IllegalArgumentException) at clojure.lang.RT/seqFrom (RT.java:557).
+; Don't know how to create ISeq from: clojure.lang.Keyword
+clj꞉clojure-crash-course.practice-problems꞉> 
+"Alex"
+clj꞉clojure-crash-course.practice-problems꞉> 
+; Syntax error compiling at (src/clojure_crash_course/practice_problems.clj:61:1).
+; Unable to resolve symbol: greet in this context
+clj꞉clojure-crash-course.practice-problems꞉> 
+; Syntax error compiling at (src/clojure_crash_course/practice_problems.clj:61:1).
+; Unable to resolve symbol: greet in this context
+clj꞉clojure-crash-course.practice-problems꞉> 
+#'clojure-crash-course.practice-problems/greet
+clj꞉clojure-crash-course.practice-problems꞉> 
+"Hello, Alex!"
+clj꞉clojure-crash-course.practice-problems꞉> 
+#'clojure-crash-course.practice-problems/add-three
+clj꞉clojure-crash-course.practice-problems꞉> 
+6
+clj꞉clojure-crash-course.practice-problems꞉> 
+; Syntax error compiling at (src/clojure_crash_course/practice_problems.clj:86:1).
+; Unable to resolve symbol: % in this context
+clj꞉clojure-crash-course.practice-problems꞉> 
+14
+clj꞉clojure-crash-course.practice-problems꞉> 
+; Error printing return value (IllegalArgumentException) at clojure.lang.RT/seqFrom (RT.java:557).
+; Don't know how to create ISeq from: clojure_crash_course.practice_problems$eval10425$fn__10426
+clj꞉clojure-crash-course.practice-problems꞉> 
+; Error printing return value (IllegalArgumentException) at clojure.lang.RT/seqFrom (RT.java:557).
+; Don't know how to create ISeq from: clojure_crash_course.practice_problems$eval10432$fn__10433
+clj꞉clojure-crash-course.practice-problems꞉> 
+(10 20 30 40 50)
+clj꞉clojure-crash-course.practice-problems꞉> 
+; Syntax error compiling at (src/clojure_crash_course/practice_problems.clj:108:1).
+; Unable to resolve symbol: filter-nums in this context
+clj꞉clojure-crash-course.practice-problems꞉> 
+; Syntax error compiling at (src/clojure_crash_course/practice_problems.clj:108:1).
+; Unable to resolve symbol: filter-nums in this context
+clj꞉clojure-crash-course.practice-problems꞉> 
+#'clojure-crash-course.practice-problems/filter-nums
+clj꞉clojure-crash-course.practice-problems꞉> 
+(2 4 6 8 10)
+clj꞉clojure-crash-course.practice-problems꞉> 
+#'clojure-crash-course.practice-problems/nums3
+clj꞉clojure-crash-course.practice-problems꞉> 
+; Execution error (ArityException) at clojure-crash-course.practice-problems/eval10452 (REPL:117).
+; Wrong number of args (1) passed to: clojure.core/reduce
+clj꞉clojure-crash-course.practice-problems꞉> 
+150
+clj꞉clojure-crash-course.practice-problems꞉> 
