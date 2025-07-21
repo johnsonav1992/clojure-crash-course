@@ -37,7 +37,7 @@ You can configure this with the setting:
 ; 
 
 ; Starting Jack-in: (cd /Users/Alex/Desktop/clojure-crash-course; lein update-in :dependencies conj '[nrepl,"1.3.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.55.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless)
-; Using host:port 127.0.0.1:58828 ...
+; Using host:port 127.0.0.1:51833 ...
 ; Hooking up nREPL sessions ...
 ; Connected session: clj
 ; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
@@ -48,304 +48,153 @@ about why stdout printed to this file is prepended with `;` to be line comments.
 clj꞉clojure-crash-course.core꞉> 
 ; Jack-in done.
 clj꞉clojure-crash-course.core꞉> 
-#'clojure-crash-course.core/something
-clj꞉clojure-crash-course.core꞉> 
-#'clojure-crash-course.core/something
-clj꞉clojure-crash-course.core꞉> 
-2
-clj꞉clojure-crash-course.core꞉> 
-3
-clj꞉clojure-crash-course.core꞉> 
-3
-clj꞉clojure-crash-course.core꞉> 
-10
-clj꞉clojure-crash-course.core꞉> 
-7
-clj꞉clojure-crash-course.core꞉> 
-20
-clj꞉clojure-crash-course.core꞉> 
-4
-clj꞉clojure-crash-course.core꞉> 
-; Syntax error compiling at (src/clojure_crash_course/core.clj:34:1).
-; Unable to resolve symbol: my-age in this context
-clj꞉clojure-crash-course.core꞉> 
-; Syntax error compiling at (src/clojure_crash_course/core.clj:33:1).
-; Unable to resolve symbol: my-name in this context
-clj꞉clojure-crash-course.core꞉> 
-(1 2 3 4)
-clj꞉clojure-crash-course.core꞉> 
-("apple" "banana" "cherry")
-clj꞉clojure-crash-course.core꞉> 
-[1 2 3 4]
-clj꞉clojure-crash-course.core꞉> 
-["apple" "banana" "cherry"]
-clj꞉clojure-crash-course.core꞉> 
-:name
-clj꞉clojure-crash-course.core꞉> 
-:age
-clj꞉clojure-crash-course.core꞉> 
-:favorite-color
-clj꞉clojure-crash-course.core꞉> 
-{:name "Alex", :age 25, :city "New York"}
-clj꞉clojure-crash-course.core꞉> 
-; Syntax error compiling at (src/clojure_crash_course/core.clj:0:0).
-; Unable to resolve symbol: my-name in this context
-clj꞉clojure-crash-course.core꞉> 
-15
-clj꞉clojure-crash-course.core꞉> 
-#'clojure-crash-course.core/result
-clj꞉clojure-crash-course.core꞉> 
-#'clojure-crash-course.core/my-name
-clj꞉clojure-crash-course.core꞉> 
-#'clojure-crash-course.core/my-age
-clj꞉clojure-crash-course.core꞉> 
-"Alex"
-clj꞉clojure-crash-course.core꞉> 
-"Hello Alex"
-clj꞉clojure-crash-course.core꞉> 
-30
-clj꞉clojure-crash-course.core꞉> 
-10
-clj꞉clojure-crash-course.core꞉> 
-30
-clj꞉clojure-crash-course.core꞉> 
-"Alex"
-clj꞉clojure-crash-course.core꞉> 
-25
-clj꞉clojure-crash-course.core꞉> 
-"Alex"
-clj꞉clojure-crash-course.core꞉> 
-#'clojure-crash-course.lesson2-functions/say-hello
-clj꞉clojure-crash-course.lesson2-functions꞉> 
-"Hello from my function!"
-clj꞉clojure-crash-course.lesson2-functions꞉> 
-#function[clojure-crash-course.lesson2-functions/say-hello]
-clj꞉clojure-crash-course.lesson2-functions꞉> 
-; Syntax error compiling at (src/clojure_crash_course/lesson2_functions.clj:20:1).
-; Unable to resolve symbol: greet in this context
-clj꞉clojure-crash-course.lesson2-functions꞉> 
-#'clojure-crash-course.lesson2-functions/greet
-clj꞉clojure-crash-course.lesson2-functions꞉> 
-"Hello Alex!"
-clj꞉clojure-crash-course.lesson2-functions꞉> 
-"Hello World!"
-clj꞉clojure-crash-course.lesson2-functions꞉> 
-"Hello Bob!"
-clj꞉clojure-crash-course.lesson2-functions꞉> 
-#'clojure-crash-course.lesson2-functions/add-three
-clj꞉clojure-crash-course.lesson2-functions꞉> 
-6
-clj꞉clojure-crash-course.lesson2-functions꞉> 
-60
-clj꞉clojure-crash-course.lesson2-functions꞉> 
-#'clojure-crash-course.lesson2-functions/greet-loudly
-clj꞉clojure-crash-course.lesson2-functions꞉> 
-"HELLO ALEX!!!"
-clj꞉clojure-crash-course.lesson2-functions꞉> 
-#function[clojure-crash-course.lesson2-functions/eval10328/fn--10329]
-clj꞉clojure-crash-course.lesson2-functions꞉> 
-10
-clj꞉clojure-crash-course.lesson2-functions꞉> 
-#function[clojure-crash-course.lesson2-functions/eval10338/fn--10339]
-clj꞉clojure-crash-course.lesson2-functions꞉> 
-10
-clj꞉clojure-crash-course.lesson2-functions꞉> 
-#'clojure-crash-course.lesson3-collections/fruits
-clj꞉clojure-crash-course.lesson3-collections꞉> 
-#'clojure-crash-course.lesson3-collections/numbers
-clj꞉clojure-crash-course.lesson3-collections꞉> 
-#'clojure-crash-course.lesson3-collections/person
-clj꞉clojure-crash-course.lesson3-collections꞉> 
-(2 3 4 5 6)
-clj꞉clojure-crash-course.lesson3-collections꞉> 
-(2 4)
-clj꞉clojure-crash-course.lesson3-collections꞉> 
-("banana" "cherry")
-clj꞉clojure-crash-course.lesson3-collections꞉> 
-15
-clj꞉clojure-crash-course.lesson3-collections꞉> 
-(3 5)
-clj꞉clojure-crash-course.lesson3-collections꞉> 
-(:name :age :city)
-clj꞉clojure-crash-course.lesson3-collections꞉> 
-{:name "Alex", :age 25, :city "New York", :job "Programmer"}
-clj꞉clojure-crash-course.lesson3-collections꞉> 
-"apple"
-clj꞉clojure-crash-course.lesson3-collections꞉> 
-"date"
-clj꞉clojure-crash-course.lesson3-collections꞉> 
-#'clojure-crash-course.lesson3-collections/fruits
-clj꞉clojure-crash-course.lesson3-collections꞉> 
-4
-clj꞉clojure-crash-course.lesson3-collections꞉> 
-("banana" "cherry" "date")
-clj꞉clojure-crash-course.lesson3-collections꞉> 
-("apple" "banana")
-clj꞉clojure-crash-course.lesson3-collections꞉> 
-("cherry" "date")
-clj꞉clojure-crash-course.lesson3-collections꞉> 
-("Alex" 25 "New York")
-clj꞉clojure-crash-course.lesson3-collections꞉> 
-{:name "Alex", :city "New York"}
-clj꞉clojure-crash-course.lesson3-collections꞉> 
-(3 5)
-clj꞉clojure-crash-course.lesson3-collections꞉> 
-; nREPL Connection was closed
-; Jacking in...
-; Connecting using "Leiningen" project type.
-; You can make Calva auto-select this.
-;   - See https://calva.io/connect-sequences/
-; 
-
-; Starting Jack-in: (cd /Users/Alex/Desktop/clojure-crash-course; lein update-in :dependencies conj '[nrepl,"1.3.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.55.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless)
-; Using host:port 127.0.0.1:65061 ...
-; Hooking up nREPL sessions ...
-; Connected session: clj
-; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+"yes"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"no"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+#'clojure-crash-course.lesson4-control-flow/age
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"adult"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
 nil
-clj꞉clojure-crash-course.core꞉> 
-; Jack-in done.
-clj꞉clojure-crash-course.core꞉> 
-#'clojure-crash-course.lesson2-functions/greet-loudly
-clj꞉clojure-crash-course.lesson2-functions꞉> 
-"HELLO BOB!!!"
-clj꞉clojure-crash-course.lesson2-functions꞉> 
-"HELLO ALEX!!!"
-clj꞉clojure-crash-course.lesson2-functions꞉> 
-#'clojure-crash-course.utils/add
-clj꞉clojure-crash-course.utils꞉> 
-63
-clj꞉clojure-crash-course.utils꞉> 
-63
-clj꞉clojure-crash-course.utils꞉> 
-; Execution error (ArityException) at clojure-crash-course.utils/eval10296 (REPL:6).
-; Wrong number of args (1) passed to: clojure-crash-course.utils/add
-clj꞉clojure-crash-course.utils꞉> 
-63
-clj꞉clojure-crash-course.utils꞉> 
-; Syntax error macroexpanding clojure.core/defn at (src/clojure_crash_course/practice_problems.clj:22:1).
-; 5 - failed: vector? at: [:fn-tail :arity-1 :params] spec: :clojure.core.specs.alpha/param-list
-; 5 - failed: (or (nil? %) (sequential? %)) at: [:fn-tail :arity-n :bodies] spec: :clojure.core.specs.alpha/params+body
-clj꞉clojure-crash-course.practice-problems꞉> 
-; Syntax error macroexpanding clojure.core/defn at (src/clojure_crash_course/practice_problems.clj:22:1).
-; 33 - failed: vector? at: [:fn-tail :arity-1 :params] spec: :clojure.core.specs.alpha/param-list
-; 33 - failed: (or (nil? %) (sequential? %)) at: [:fn-tail :arity-n :bodies] spec: :clojure.core.specs.alpha/params+body
-clj꞉clojure-crash-course.practice-problems꞉> 
-; Syntax error macroexpanding clojure.core/defn at (src/clojure_crash_course/practice_problems.clj:22:1).
-; 33 - failed: vector? at: [:fn-tail :arity-1 :params] spec: :clojure.core.specs.alpha/param-list
-; 33 - failed: (or (nil? %) (sequential? %)) at: [:fn-tail :arity-n :bodies] spec: :clojure.core.specs.alpha/params+body
-clj꞉clojure-crash-course.practice-problems꞉> 
-nil
-clj꞉clojure-crash-course.practice-problems꞉> 
-; Syntax error macroexpanding clojure.core/defn at (src/clojure_crash_course/practice_problems.clj:22:1).
-; 33 - failed: vector? at: [:fn-tail :arity-1 :params] spec: :clojure.core.specs.alpha/param-list
-; 33 - failed: (or (nil? %) (sequential? %)) at: [:fn-tail :arity-n :bodies] spec: :clojure.core.specs.alpha/params+body
-clj꞉clojure-crash-course.practice-problems꞉> 
-#'clojure-crash-course.practice-problems/age
-clj꞉clojure-crash-course.practice-problems꞉> 
-#'clojure-crash-course.practice-problems/favorite-food
-clj꞉clojure-crash-course.practice-problems꞉> 
-#'clojure-crash-course.practice-problems/likes-programming
-clj꞉clojure-crash-course.practice-problems꞉> 
-; Execution error (ClassCastException) at clojure-crash-course.practice-problems/eval10379 (REPL:25).
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+; You can vote!
+; You can drive!
+"adult"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+; You can vote!
+; You can drive!
+"adult"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+; You can vote!
+; You can drive!
+"adult"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+; Syntax error compiling at (src/clojure_crash_course/lesson4_control_flow.clj:30:1).
+; Unable to resolve symbol: describe-age in this context
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+#'clojure-crash-course.lesson4-control-flow/describe-age
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"child"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"teenager"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"adult"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"senior"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+#'clojure-crash-course.lesson4-control-flow/day-type
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"start of work week"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"almost weekend!"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"regular day"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+; Syntax error compiling at (src/clojure_crash_course/lesson4_control_flow.clj:52:1).
+; Unable to resolve symbol: numbers in this context
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+#'clojure-crash-course.lesson4-control-flow/numbers
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+(6 8 10)
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+(1 4 3 8 5 12 7 16 9 20)
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+#'clojure-crash-course.lesson4-control-flow/number-sign
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"negative"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"negative"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"negative"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"negative"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"negative"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"negative"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+#'clojure-crash-course.lesson4-control-flow/number-sign
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+; Execution error (ClassCastException) at clojure-crash-course.lesson4-control-flow/number-sign (REPL:77).
 ; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
-clj꞉clojure-crash-course.practice-problems꞉> 
-; 33
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+#'clojure-crash-course.lesson4-control-flow/number-sign
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"positive"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"negative"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"zero"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+#'clojure-crash-course.lesson4-control-flow/letter-grade
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"F"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"C"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
 nil
-clj꞉clojure-crash-course.practice-problems꞉> 
-nil
-clj꞉clojure-crash-course.practice-problems꞉> 
-nil
-clj꞉clojure-crash-course.practice-problems꞉> 
-; Execution error (ClassCastException) at clojure-crash-course.practice-problems/eval10385 (REPL:35).
-; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
-clj꞉clojure-crash-course.practice-problems꞉> 
-; Execution error (ClassCastException) at clojure-crash-course.practice-problems/eval10387 (REPL:35).
-; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
-clj꞉clojure-crash-course.practice-problems꞉> 
-#'clojure-crash-course.practice-problems/colors
-clj꞉clojure-crash-course.practice-problems꞉> 
-#'clojure-crash-course.practice-problems/nums
-clj꞉clojure-crash-course.practice-problems꞉> 
-; Execution error (ClassCastException) at nrepl.middleware.interruptible-eval/evaluator$run$fn (interruptible_eval.clj:106).
-; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
-clj꞉clojure-crash-course.practice-problems꞉> 
-#'clojure-crash-course.practice-problems/nums
-clj꞉clojure-crash-course.practice-problems꞉> 
-; Syntax error compiling at (src/clojure_crash_course/practice_problems.clj:37:1).
-; Unable to resolve symbol: dep in this context
-clj꞉clojure-crash-course.practice-problems꞉> 
-#'clojure-crash-course.practice-problems/person
-clj꞉clojure-crash-course.practice-problems꞉> 
-"red"
-clj꞉clojure-crash-course.practice-problems꞉> 
-5
-clj꞉clojure-crash-course.practice-problems꞉> 
-; Error printing return value (IllegalArgumentException) at clojure.lang.RT/seqFrom (RT.java:557).
-; Don't know how to create ISeq from: clojure.lang.Keyword
-clj꞉clojure-crash-course.practice-problems꞉> 
-"Alex"
-clj꞉clojure-crash-course.practice-problems꞉> 
-; Syntax error compiling at (src/clojure_crash_course/practice_problems.clj:61:1).
-; Unable to resolve symbol: greet in this context
-clj꞉clojure-crash-course.practice-problems꞉> 
-; Syntax error compiling at (src/clojure_crash_course/practice_problems.clj:61:1).
-; Unable to resolve symbol: greet in this context
-clj꞉clojure-crash-course.practice-problems꞉> 
-#'clojure-crash-course.practice-problems/greet
-clj꞉clojure-crash-course.practice-problems꞉> 
-"Hello, Alex!"
-clj꞉clojure-crash-course.practice-problems꞉> 
-#'clojure-crash-course.practice-problems/add-three
-clj꞉clojure-crash-course.practice-problems꞉> 
-6
-clj꞉clojure-crash-course.practice-problems꞉> 
-; Syntax error compiling at (src/clojure_crash_course/practice_problems.clj:86:1).
-; Unable to resolve symbol: % in this context
-clj꞉clojure-crash-course.practice-problems꞉> 
-14
-clj꞉clojure-crash-course.practice-problems꞉> 
-; Error printing return value (IllegalArgumentException) at clojure.lang.RT/seqFrom (RT.java:557).
-; Don't know how to create ISeq from: clojure_crash_course.practice_problems$eval10425$fn__10426
-clj꞉clojure-crash-course.practice-problems꞉> 
-; Error printing return value (IllegalArgumentException) at clojure.lang.RT/seqFrom (RT.java:557).
-; Don't know how to create ISeq from: clojure_crash_course.practice_problems$eval10432$fn__10433
-clj꞉clojure-crash-course.practice-problems꞉> 
-(10 20 30 40 50)
-clj꞉clojure-crash-course.practice-problems꞉> 
-; Syntax error compiling at (src/clojure_crash_course/practice_problems.clj:108:1).
-; Unable to resolve symbol: filter-nums in this context
-clj꞉clojure-crash-course.practice-problems꞉> 
-; Syntax error compiling at (src/clojure_crash_course/practice_problems.clj:108:1).
-; Unable to resolve symbol: filter-nums in this context
-clj꞉clojure-crash-course.practice-problems꞉> 
-#'clojure-crash-course.practice-problems/filter-nums
-clj꞉clojure-crash-course.practice-problems꞉> 
-(2 4 6 8 10)
-clj꞉clojure-crash-course.practice-problems꞉> 
-#'clojure-crash-course.practice-problems/nums3
-clj꞉clojure-crash-course.practice-problems꞉> 
-; Execution error (ArityException) at clojure-crash-course.practice-problems/eval10452 (REPL:117).
-; Wrong number of args (1) passed to: clojure.core/reduce
-clj꞉clojure-crash-course.practice-problems꞉> 
-150
-clj꞉clojure-crash-course.practice-problems꞉> 
-#'clojure-crash-course.practice-problems/person
-clj꞉clojure-crash-course.practice-problems꞉> 
-{:name "Alice", :age 25, :city "Portland", :occupation "Developer"}
-clj꞉clojure-crash-course.practice-problems꞉> 
-{:name "Alice", :age 26, :city "Portland"}
-clj꞉clojure-crash-course.practice-problems꞉> 
-{:name "Alice", :age 25}
-clj꞉clojure-crash-course.practice-problems꞉> 
-; Execution error (ArityException) at clojure-crash-course.practice-problems/eval10462 (REPL:143).
-; Wrong number of args (4) passed to: clojure.core/filter
-clj꞉clojure-crash-course.practice-problems꞉> 
-; Syntax error compiling at (src/clojure_crash_course/practice_problems.clj:154:1).
-; Unable to resolve symbol: people in this context
-clj꞉clojure-crash-course.practice-problems꞉> 
-#'clojure-crash-course.practice-problems/people
-clj꞉clojure-crash-course.practice-problems꞉> 
-; Error printing return value (ClassCastException) at clojure.lang.Numbers/gt (Numbers.java:261).
-; class clojure.lang.PersistentArrayMap cannot be cast to class java.lang.Number (clojure.lang.PersistentArrayMap is in unnamed module of loader 'app'; java.lang.Number is in module java.base of loader 'bootstrap')
-clj꞉clojure-crash-course.practice-problems꞉> 
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+#'clojure-crash-course.lesson4-control-flow/letter-grade
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"D"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"C"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"F"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"B"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+#'clojure-crash-course.lesson4-control-flow/letter-grade
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"F"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"D"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"C"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"B"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"B"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"A"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+; Syntax error compiling at (src/clojure_crash_course/lesson4_control_flow.clj:124:1).
+; Unable to resolve symbol: trafic-action in this context
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+#'clojure-crash-course.lesson4-control-flow/trafic-action
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"broken light"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"stop"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"caution"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"go"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"broken light"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"broken light"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+#'clojure-crash-course.lesson4-control-flow/is-weekend?
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+false
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+true
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+true
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"freezing"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+#'clojure-crash-course.lesson4-control-flow/temp-category
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"freezing"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"cold"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"mild"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"warm"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+"hot"
+clj꞉clojure-crash-course.lesson4-control-flow꞉> 
