@@ -32,6 +32,7 @@
 - **Functions**: `defn` for named functions, `#()` for anonymous
 - **Immutability**: Functions return new data, don't modify originals
 - **Collection Operations**: `map`, `filter`, `reduce`, `first`, `last`, etc.
+- **Control Flow**: `if`, `when`, `cond`, `case`, boolean logic (`and`, `or`, `not`)
 
 ## Files Created
 - `src/clojure_crash_course/lesson2_functions.clj`
