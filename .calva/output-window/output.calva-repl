@@ -37,7 +37,7 @@ You can configure this with the setting:
 ; 
 
 ; Starting Jack-in: (cd /Users/Alex/Desktop/clojure-crash-course; lein update-in :dependencies conj '[nrepl,"1.3.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.55.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless)
-; Using host:port 127.0.0.1:51833 ...
+; Using host:port 127.0.0.1:52945 ...
 ; Hooking up nREPL sessions ...
 ; Connected session: clj
 ; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
@@ -48,153 +48,49 @@ about why stdout printed to this file is prepended with `;` to be line comments.
 clj꞉clojure-crash-course.core꞉> 
 ; Jack-in done.
 clj꞉clojure-crash-course.core꞉> 
-"yes"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"no"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-#'clojure-crash-course.lesson4-control-flow/age
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"adult"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-nil
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-; You can vote!
-; You can drive!
-"adult"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-; You can vote!
-; You can drive!
-"adult"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-; You can vote!
-; You can drive!
-"adult"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-; Syntax error compiling at (src/clojure_crash_course/lesson4_control_flow.clj:30:1).
-; Unable to resolve symbol: describe-age in this context
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-#'clojure-crash-course.lesson4-control-flow/describe-age
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"child"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"teenager"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"adult"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"senior"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-#'clojure-crash-course.lesson4-control-flow/day-type
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"start of work week"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"almost weekend!"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"regular day"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-; Syntax error compiling at (src/clojure_crash_course/lesson4_control_flow.clj:52:1).
-; Unable to resolve symbol: numbers in this context
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-#'clojure-crash-course.lesson4-control-flow/numbers
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-(6 8 10)
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-(1 4 3 8 5 12 7 16 9 20)
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-#'clojure-crash-course.lesson4-control-flow/number-sign
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"negative"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"negative"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"negative"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"negative"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"negative"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"negative"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-#'clojure-crash-course.lesson4-control-flow/number-sign
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-; Execution error (ClassCastException) at clojure-crash-course.lesson4-control-flow/number-sign (REPL:77).
-; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-#'clojure-crash-course.lesson4-control-flow/number-sign
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"positive"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"negative"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"zero"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-#'clojure-crash-course.lesson4-control-flow/letter-grade
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"F"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"C"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-nil
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-#'clojure-crash-course.lesson4-control-flow/letter-grade
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"D"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"C"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"F"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"B"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-#'clojure-crash-course.lesson4-control-flow/letter-grade
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"F"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"D"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"C"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"B"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"B"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"A"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-; Syntax error compiling at (src/clojure_crash_course/lesson4_control_flow.clj:124:1).
-; Unable to resolve symbol: trafic-action in this context
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-#'clojure-crash-course.lesson4-control-flow/trafic-action
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"broken light"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"stop"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"caution"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"go"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"broken light"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"broken light"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-#'clojure-crash-course.lesson4-control-flow/is-weekend?
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-false
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-true
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-true
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"freezing"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-#'clojure-crash-course.lesson4-control-flow/temp-category
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"freezing"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"cold"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"mild"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"warm"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
-"hot"
-clj꞉clojure-crash-course.lesson4-control-flow꞉> 
+#'clojure-crash-course.lesson5-let-bindings/calculate-circle-area
+clj꞉clojure-crash-course.lesson5-let-bindings꞉> 
+78.53975
+clj꞉clojure-crash-course.lesson5-let-bindings꞉> 
+; Syntax error compiling at (src/clojure_crash_course/lesson5_let_bindings.clj:43:1).
+; Unable to resolve symbol: format-person in this context
+clj꞉clojure-crash-course.lesson5-let-bindings꞉> 
+#'clojure-crash-course.lesson5-let-bindings/format-person
+clj꞉clojure-crash-course.lesson5-let-bindings꞉> 
+"Hello, John Doe. You are an adult."
+clj꞉clojure-crash-course.lesson5-let-bindings꞉> 
+#'clojure-crash-course.lesson5-let-bindings/compound-interest
+clj꞉clojure-crash-course.lesson5-let-bindings꞉> 
+1628.8946267774422
+clj꞉clojure-crash-course.lesson5-let-bindings꞉> 
+#'clojure-crash-course.lesson5-let-bindings/process-order
+clj꞉clojure-crash-course.lesson5-let-bindings꞉> 
+{:subtotal 45.24, :discount-amount 4.524, :tax-amount 3.25728, :final-total 43.97328}
+clj꞉clojure-crash-course.lesson5-let-bindings꞉> 
+#'clojure-crash-course.lesson5-let-bindings/analyze-coordinates
+clj꞉clojure-crash-course.lesson5-let-bindings꞉> 
+{:x 3, :y 4, :distance 5.0}
+clj꞉clojure-crash-course.lesson5-let-bindings꞉> 
+#'clojure-crash-course.lesson5-let-bindings/calculate-grade
+clj꞉clojure-crash-course.lesson5-let-bindings꞉> 
+{:scores [85 92 78 88 91], :total 434, :average 434/5, :letter-grade "B"}
+clj꞉clojure-crash-course.lesson5-let-bindings꞉> 
+#'clojure-crash-course.lesson5-let-bindings/clean-and-analyze-text
+clj꞉clojure-crash-course.lesson5-let-bindings꞉> 
+{:original "  Hello WORLD! This is a TEST.  ",
+ :cleaned "hello world! this is a test.",
+ :word-count 6,
+ :char-count 28,
+ :avg-word-length 14/3}
+clj꞉clojure-crash-course.lesson5-let-bindings꞉> 
+; Syntax error compiling at (src/clojure_crash_course/lesson5_let_bindings.clj:179:23).
+; Unable to resolve symbol: celsius in this context
+clj꞉clojure-crash-course.lesson5-let-bindings꞉> 
+#'clojure-crash-course.lesson5-let-bindings/temperature-converter
+clj꞉clojure-crash-course.lesson5-let-bindings꞉> 
+{:celsius 25, :fahrenheit 77N, :kelvin 298.15}
+clj꞉clojure-crash-course.lesson5-let-bindings꞉> 
+{:celsius 30, :fahrenheit 86N, :kelvin 303.15}
+clj꞉clojure-crash-course.lesson5-let-bindings꞉> 
+{:celsius 30, :fahrenheit 86N, :kelvin 303.15}
+clj꞉clojure-crash-course.lesson5-let-bindings꞉> 
