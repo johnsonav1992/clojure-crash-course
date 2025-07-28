@@ -194,7 +194,15 @@
   ;; YOUR CODE HERE
   ;; Use let to calculate subtotal, tax, and total
   ;; Return map with :items, :subtotal, :tax, :total
-  )
+  (let [subtotal (reduce + (map #(* (:price %) (:quantity %)) items))
+        tax (Math/round (* subtotal tax-rate))
+        total (+ subtotal tax)]
+    {:items items
+     :subtotal subtotal
+     :tax tax
+     :total total}))
+(calculate-cart [{:name "Apple" :price 1.50 :quantity 3}
+                  {:name "Bread" :price 2.99 :quantity 1}] 0.08)
 
 ;; Exercise 3: String Statistics
 ;; Write a function that analyzes a sentence and returns:

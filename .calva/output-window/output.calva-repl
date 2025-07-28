@@ -94,3 +94,15 @@ clj꞉clojure-crash-course.lesson5-let-bindings꞉> 
 clj꞉clojure-crash-course.lesson5-let-bindings꞉> 
 {:celsius 30, :fahrenheit 86N, :kelvin 303.15}
 clj꞉clojure-crash-course.lesson5-let-bindings꞉> 
+#'clojure-crash-course.lesson5-let-bindings/calculate-cart
+clj꞉clojure-crash-course.lesson5-let-bindings꞉> 
+{:items [{:name "Apple", :price 1.5, :quantity 3} {:name "Bread", :price 2.99, :quantity 1}],
+ :subtotal 7.49,
+ :tax 0.5992000000000001,
+ :total 8.0892}
+clj꞉clojure-crash-course.lesson5-let-bindings꞉> 
+{:items [{:name "Apple", :price 1.5, :quantity 3} {:name "Bread", :price 2.99, :quantity 1}],
+ :subtotal 7.49,
+ :tax 0.5992000000000001,
+ :total 8.0892}
+clj꞉clojure-crash-course.lesson5-let-bindings꞉> 
