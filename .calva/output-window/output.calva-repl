@@ -106,3 +106,17 @@ clj꞉clojure-crash-course.lesson5-let-bindings꞉> 
  :tax 0.5992000000000001,
  :total 8.0892}
 clj꞉clojure-crash-course.lesson5-let-bindings꞉> 
+#'clojure-crash-course.lesson5-let-bindings/analyze-sentence
+clj꞉clojure-crash-course.lesson5-let-bindings꞉> 
+; Execution error (ClassCastException) at clojure-crash-course.lesson5-let-bindings/analyze-sentence$fn (REPL:220).
+; class java.lang.Character cannot be cast to class java.lang.CharSequence (java.lang.Character and java.lang.CharSequence are in module java.base of loader 'bootstrap')
+clj꞉clojure-crash-course.lesson5-let-bindings꞉> 
+#'clojure-crash-course.lesson5-let-bindings/analyze-sentence
+clj꞉clojure-crash-course.lesson5-let-bindings꞉> 
+; Execution error (ClassCastException) at clojure-crash-course.lesson5-let-bindings/analyze-sentence$fn (REPL:220).
+; class java.lang.Character cannot be cast to class java.lang.CharSequence (java.lang.Character and java.lang.CharSequence are in module java.base of loader 'bootstrap')
+clj꞉clojure-crash-course.lesson5-let-bindings꞉> 
+#'clojure-crash-course.lesson5-let-bindings/format-date
+clj꞉clojure-crash-course.lesson5-let-bindings꞉> 
+"January 15, 2024"
+clj꞉clojure-crash-course.lesson5-let-bindings꞉> 

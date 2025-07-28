@@ -215,7 +215,18 @@
 (defn analyze-sentence [sentence]
   ;; YOUR CODE HERE
   ;; Use let to break down the analysis steps
-  )
+  (let [words (clojure.string/split sentence #"\s+")
+        word-count (count words)
+        vowels (count (filter #(re-matches #"[aeiouAEIOU]" %) (apply str words)))
+        consonants (count (filter #(re-matches #"[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]" %) (apply str words)))
+        longest-word (apply max-key count words)]
+    {:word-count word-count
+     :vowels vowels
+     :consonants consonants
+     :longest-word longest-word}))
+
+(analyze-sentence "The quick brown fox jumps over the lazy dog.")
+
 
 ;; Exercise 4: Date Formatter
 ;; Write a function that takes a date string "2024-01-15" and formats it
@@ -225,7 +236,14 @@
   ;; YOUR CODE HERE
   ;; Use let to destructure the date parts
   ;; Map month numbers to names
-  )
+  (let [month-names {1 "January" 2 "February" 3 "March"
+                     4 "April" 5 "May" 6 "June"
+                     7 "July" 8 "August" 9 "September"
+                     10 "October" 11 "November" 12 "December"}
+        [year month day] (map parse-long (clojure.string/split date-string #"-"))]
+    (str (month-names month) " " day ", " year)))
+
+(format-date "2024-01-15")  ; => "January 15, 2024"
 
 ;; ============================================================================
 ;; SOLUTIONS (Don't peek until you try!)

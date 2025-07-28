@@ -1,8 +1,8 @@
 # Clojure Learning Journey with Claude
 
 ## Current Progress
-- **Current Lesson**: Ready for Lesson 5 - Let bindings and local variables  
-- **Completed Lessons**: 1, 2, 3, 4 + Practice Review
+- **Current Lesson**: Ready for Lesson 6 - Higher-order functions and map/filter/reduce  
+- **Completed Lessons**: 1, 2, 3, 4, 5 + Practice Review
 - **Student Level**: Beginner (some coding experience)
 
 ## Completed Lessons
@@ -11,6 +11,7 @@
 ✅ **Lesson 3**: Collection operations (map, filter, reduce, assoc, etc.)  
 ✅ **Practice Review**: Completed practice problems (8/12 perfect, 3 need work)
 ✅ **Lesson 4**: Control flow and conditionals (if, when, cond, case, boolean logic)
+✅ **Lesson 5**: Let bindings and local variables (completed all 4 practice exercises)
 
 ## Learning Plan
 4. **Lesson 4**: Control flow and conditionals
@@ -33,11 +34,13 @@
 - **Immutability**: Functions return new data, don't modify originals
 - **Collection Operations**: `map`, `filter`, `reduce`, `first`, `last`, etc.
 - **Control Flow**: `if`, `when`, `cond`, `case`, boolean logic (`and`, `or`, `not`)
+- **Let Bindings**: Local variables with `let`, destructuring, nested bindings
 
 ## Files Created
 - `src/clojure_crash_course/lesson2_functions.clj`
 - `src/clojure_crash_course/lesson3_collections.clj`
-- `src/clojure_crash_course/lesson4_control_flow.clj` (ready for next time)
+- `src/clojure_crash_course/lesson4_control_flow.clj`
+- `src/clojure_crash_course/lesson5_let_bindings.clj`
 
 ## Next Session Plan
 🎯 **IMPORTANT**: Before Lesson 4, do practice problems from scratch to reinforce lessons 1-3:
